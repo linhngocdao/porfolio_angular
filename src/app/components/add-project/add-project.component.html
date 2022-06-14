@@ -1,0 +1,40 @@
+<button class="btn btn-info" routerLink="/admin/post">Return</button>
+<form (ngSubmit)="onSubmitPost()" class="p-5">
+
+  <div class="mb-3">
+    <label>Title</label>
+    <input type="text" class="form-control" [(ngModel)]="post.name" name="title">
+  </div>
+
+
+  <label>Category</label><br>
+  <div [(ngModel)]="post.categoryProjectId" class="mb-3">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Moi ban chon</option>
+      <option value="1" *ngFor="let cate of categorys" value={{cate.id}}>{{cate.name}}</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="block text-sm font-medium text-gray-700" >
+      Image
+    </label>
+    <div class="flex text-sm text-gray-600 pt-2" [(ngModel)]="post.image" >
+      <input id="file-upload" (change)="uploadImg($event)" type="file">
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label>Short Description</label>
+    <input type="text" class="form-control" [(ngModel)]="post.shortDesc" name="short_desc">
+  </div>
+
+
+  <div class="mb-3">
+    <label>Description</label>
+    <input type="text" class="form-control" [(ngModel)]="post.desc" name="description">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Cập nhật</button>
+</form>

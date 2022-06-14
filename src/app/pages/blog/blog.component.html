@@ -1,0 +1,17 @@
+<div class="w-[1152px] mx-auto  ">
+    <app-header></app-header>
+    <section class="content w-full mb-[58px]">
+        <div class="w-[67%] mx-auto">
+            <p class="text-[34px] font-bold  mb-[37px]">Blog</p>
+                <div class="grid grid-rows-4 gap-3">
+                    <div class="border-b border-inherit mb-[30px]" *ngFor="let post of Posts">
+                        <p class="font-bold text-[24px] mb-[5px]">{{post.title}}</p>
+                        <p class="mb-[5px]">{{post.createAt}}</p>
+                        <p>{{post.categoryPostId}}</p>
+                        <p class="text-[12px] mb-[6px]">{{post.description}}</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <app-footer></app-footer>
+</div>

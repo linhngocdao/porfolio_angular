@@ -1,0 +1,28 @@
+<div class="w-[1152px] mx-auto  ">
+<app-header></app-header>
+<section class="project__posts w-full mb-[110px]">
+    <div class="container  w-[47%] mx-auto">
+        <p class="text-[35px] font-bold">Work</p>
+        <div class="grid grid-rows-2 gap-[20px] mt-[18px]">
+            <div class=" border-b border-inherit flex " *ngFor="let pro of Project">
+                <div class="w-[195px] mr-[14px]">
+                    <img class="w-[195px] h-[156px] object-cover rounded-[20px]" src="{{pro.image}}"
+                        alt="">
+                </div>
+                <div class=" w-[69%] pb-[20px]">
+                    <p class="text-[24px] font-bold pb-[14px]">{{pro.name}}</p>
+                    <div class="pb-[20px] flex">
+                        <button
+                            class="rounded-[30px]  bg-[#142850] text-white font-bold w-[62px] text-[18px] ">2020
+                        </button>
+                        <p class=" ml-[20px] text-[19px] text-[#8695A4]">{{pro.categoryProjectId}}</p>
+                    </div>
+                    <p>{{pro.desc}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
+</div>

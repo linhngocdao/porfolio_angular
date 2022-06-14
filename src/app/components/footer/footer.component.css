@@ -1,0 +1,33 @@
+.fa{
+    width: 30px;
+    text-align: center;
+    margin-left: 17px;
+}
+.fa-facebook{
+    font-size: 25px;
+}
+.fa-facebook:hover{
+    color: rgb(21, 119, 211);
+}
+.fa-instagram{
+    font-size: 25px;
+}
+.fa-instagram:hover{
+    color: rgb(210, 44, 7);
+}
+.fa-twitter{
+    font-size: 25px;
+}
+.fa-twitter:hover{
+    color: rgb(21, 119, 211);
+}
+.fa-linkedin{
+    font-size: 25px;
+}
+.fa-linkedin:hover{
+    color: rgb(21, 119, 211);
+}
+a{
+    text-decoration: none;
+    color: black;
+}

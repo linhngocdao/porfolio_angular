@@ -1,0 +1,31 @@
+<button class="btn btn-info" routerLink="/admin/post">Return</button>
+<form  (ngSubmit)="onSubmitPost()" class="p-5">
+
+    <div class="mb-3">
+      <label>Title</label>
+      <input type="text" class="form-control" [(ngModel)]="post.title" name="title" >
+    </div>
+
+
+    <label>Category</label><br>
+     <div  [(ngModel)]="post.categoryPostId" class="mb-3"> 
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Moi ban chon</option>
+      <option value="1" *ngFor="let cate of categorys" value={{cate.id}}>{{cate.name}}</option>
+    </select>
+  </div>  
+
+    <div class="mb-3">
+        <label>Short Description</label>
+        <input type="text" class="form-control" [(ngModel)]="post.short_desc" name="short_desc">
+    </div>
+
+
+    <div class="mb-3">
+        <label>Description</label>
+        <input type="text" class="form-control"[(ngModel)]="post.description" name="description">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Thêm sản phẩm</button>
+  </form>

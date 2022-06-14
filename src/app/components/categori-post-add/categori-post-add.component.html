@@ -1,0 +1,14 @@
+<button class="btn btn-info" routerLink="/admin/cat_post">Return</button>
+<form #formAdd="ngForm" (ngSubmit)="onAdd()" class="p-5">
+    <div style="color: red;" *ngIf="name.errors" class="alert">
+        <div *ngIf="name.errors?.['required'] && (name.dirty || name.touched)">
+        Name is required
+        </div>
+    </div>
+    <div class="mb-3">
+      <label>Name</label>
+      <input type="text" class="form-control" [(ngModel)]="categories.name" name="name" #name="ngModel" required minlength="2">
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="!formAdd.valid">Thêm sản phẩm</button>
+  </form>

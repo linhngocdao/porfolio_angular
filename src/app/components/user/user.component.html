@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Stt</th>
+        <th scope="col">Name</th>
+        <th scope="col">Position</th>
+        <th scope="col">About</th>
+        <th scope="col">Image</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users; let i = index"> 
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ user.name }}</td>
+        <td>{{ user.position }}</td>
+        <td>{{ user.about }}</td>
+        <td>{{ user.image }}</td>
+        <td>
+            <button class="btn btn-primary" routerLink="/admin/user/{{ user.id }}/edit" >Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

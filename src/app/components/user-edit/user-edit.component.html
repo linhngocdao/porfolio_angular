@@ -1,0 +1,42 @@
+<div class="">
+    <button class="btn btn-outline-secondary" routerLink="/admin/user">Về User</button>
+    <form #formEdit="ngForm"  (ngSubmit)="onEdit()" class="p-5">
+        <div style="color: red;" *ngIf="name.errors" class="alert">
+            <div *ngIf="name.errors?.['required'] && (name.dirty || name.touched)">
+                bạn cần nhập vào đây
+            </div>
+        </div>
+        <div class="mb-3">
+          <label>Name</label>
+          <input type="text" class="form-control" [(ngModel)]="user.name" name="name" #name="ngModel" required minlength="2">
+        </div>
+        <div style="color: red;" *ngIf="img.errors" class="alert">
+            <div *ngIf="img.errors?.['required'] && (img.dirty || img.touched)">
+                bạn cần nhập vào đây
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Position</label>
+            <input type="text" class="form-control"  [(ngModel)]="user.position" name="img" #img="ngModel" required minlength="2">
+        </div>
+        <div style="color: red;" *ngIf="price.errors" class="alert">
+            <div *ngIf="price.errors?.['required'] && (price.dirty || price.touched)">
+                bạn cần nhập vào đây
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>About</label>
+            <input type="text" class="form-control" [(ngModel)]="user.about" name="price" #price="ngModel" required minlength="2">
+        </div>
+        <div style="color: red;" *ngIf="desc.errors" class="alert">
+            <div *ngIf="desc.errors?.['required'] && (desc.dirty || desc.touched)">
+                bạn cần nhập vào đây
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Description</label>
+            <input type="text" class="form-control"[(ngModel)]="user.image" name="desc" #desc="ngModel" required minlength="2">
+        </div>
+        <button type="submit" class="btn btn-outline-success">Cập nhật User</button>
+      </form>
+    </div>

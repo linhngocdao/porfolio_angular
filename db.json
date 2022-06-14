@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Linh",
+      "position": "Front-end Developer",
+      "about": "Nếu debug là quá trình loại bỏ bug trong phần mềm, thì code chính là quá trình gây ra bug.",
+      "image": "https://res.cloudinary.com/assignment22/image/upload/v1655050939/Ass-reactjs/anh-dong-avatar-den-12030_msxhze.gif"
+    }
+  ],
+  "posts": [
+    {
+      "title": "Making a design system from scratch linh",
+      "createAt": "13/6/2022",
+      "categoryPostId": 1,
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "id": 3
+    },
+    {
+      "title": "Creating pixel perfect icons in Figma linh ddaof",
+      "createAt": "13/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do am",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "id": 4
+    },
+    {
+      "title": "dsadsadsas",
+      "createAt": "13/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "ds",
+      "description": "sản phẩm tốt",
+      "id": 5
+    },
+    {
+      "title": "demo112323",
+      "createAt": "13/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. ",
+      "description": "sản phẩm tốt",
+      "id": 6
+    },
+    {
+      "title": "jnsdkgjhsdgba",
+      "createAt": "13/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "gfdsgfdgfd",
+      "description": "sản phẩm tốt",
+      "id": 7
+    },
+    {
+      "title": "sdadsadsadsads",
+      "createAt": "13/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "sadsadsa",
+      "description": "sản phẩm tốt11111111",
+      "id": 8
+    },
+    {
+      "title": "đôi nét về tác giả",
+      "createAt": "13/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "sản phẩm này tốt trong tầm giá ",
+      "description": "sdadsads",
+      "id": 9
+    },
+    {
+      "title": "ngày đẹp trời",
+      "createAt": "14/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "description": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "id": 10
+    },
+    {
+      "title": "trếtht",
+      "createAt": "14/6/2022",
+      "categoryPostId": 0,
+      "short_desc": "htrdhtrht",
+      "description": "sadsad",
+      "id": 11
+    }
+  ],
+  "categoriesPosts": [
+    {
+      "id": 1,
+      "name": "post2"
+    },
+    {
+      "id": 2,
+      "name": "product 2"
+    },
+    {
+      "id": 3,
+      "name": "product 3"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Product C",
+      "image": "https://res.cloudinary.com/assignment22/image/upload/v1654916693/Ass-reactjs/2_ytazzr.jpg",
+      "createAt": 2022,
+      "categoryProjectId": "product2",
+      "shortDesc": "môt sản phẩm ấn tượng ",
+      "desc": "Chi tiết dài ",
+      "id": 1
+    },
+    {
+      "name": "Product D",
+      "image": "https://res.cloudinary.com/assignment22/image/upload/v1654916693/Ass-reactjs/1_nbbiiz.jpg",
+      "createAt": 2022,
+      "categoryProjectId": "product1",
+      "shortDesc": "fsgdfgsdsgssdfgsd",
+      "desc": "adsfjkffhhjksajkhfjhkasfjkasfjhlashjlkfjhkaskfljs",
+      "id": 2
+    },
+    {
+      "name": "Product E",
+      "image": "https://res.cloudinary.com/assignment22/image/upload/v1654916693/Ass-reactjs/3_uphrgz.jpg",
+      "createAt": 2022,
+      "categoryProjectId": "product13",
+      "shortDesc": "Sản phẩm quá tuyệt vời hết sức tưởng tượng ",
+      "id": 3,
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+    },
+    {
+      "name": "sadsa",
+      "image": "http://res.cloudinary.com/assignment22/image/upload/v1655178684/project-img/dgdzz3p4rlhd3w8ht6iq.gif",
+      "createAt": "2022",
+      "categoryProjectId": 0,
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua",
+      "desc": "21321312",
+      "id": 7
+    },
+    {
+      "name": "sản phẩm 5",
+      "image": "http://res.cloudinary.com/assignment22/image/upload/v1655184623/project-img/twyn3j0uitunc3eeikkp.jpg",
+      "createAt": "2022",
+      "categoryProjectId": 0,
+      "shortDesc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do am",
+      "desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "id": 8
+    }
+  ],
+  "categoriesProjects": [
+    {
+      "id": 2,
+      "name": "product 2"
+    },
+    {
+      "id": 3,
+      "name": "product 3"
+    },
+    {
+      "name": "Dao Ngoc Linh",
+      "id": 4
+    }
+  ]
+}
