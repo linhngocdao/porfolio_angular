@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600&display=swap');
-header{
+/* header{
     font-family: 'Heebo', sans-serif;
 }
 
@@ -49,6 +49,103 @@ color: #000000;
 .container .nav ul li a:hover{
     color: #FF6464;
     transition: all 0.3s;
+} */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Heebo", sans-serif;
+  }
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /** header **/
+  header {
+    padding: 25px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo h3 {
+    font-size: 25px;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  .navbar ul li a {
+    padding-left: 36px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .navbar.show {
+    right: 0;
+  }
+header.shadow {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
+
+  @media only screen and (min-width: 855px) {
+    .container {
+      width: 855px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .container {
+      padding: 0 20px;
+    }
+    .information__about {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .container {
+      padding: 0 10px;
+    }
+    header {
+      padding: 0;
+    }
+    .nav__toggle {
+      display: inline;
+      font-size: 50px;
+    }
+    .navbar {
+      position: fixed;
+      top: 73px;
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      background-color: white;
+      transition: 0.5s;
+      margin-left: 300px;
+    }
+    .navbar ul {
+      display: block;
+      position: absolute;
+      top: 40px;
+    }
+    .navbar ul li {
+      padding: 20px 0;
+    }
+  }
 
