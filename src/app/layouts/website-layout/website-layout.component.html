@@ -1,6 +1,7 @@
-<div class="w-[1152px] mx-auto  pt-[100px]">
+<div class="w-[1152px] mx-auto  pt-[130px] sm:w-[1152px]">
   <app-header></app-header>
   <div class="container">
+    
     <section class="row11 content w-full mb-[58px]">
       <div class="container w-[74%] mx-auto grid grid-cols-2 gap-4" *ngFor="let user of User;">
         <div class="profile grid ">
@@ -17,7 +18,7 @@
            
         </div>
         <div class="image pt-[40px] ">
-          <img src="{{user.image}}" class="ml-[100px] w-[250px] h-auto rounded-[50%] ml-[150px]  " alt="">
+          <img src="{{user.image}}" class=" w-[250px] h-auto rounded-[50%] ml-[150px]  " alt="">
         </div>
       </div>
     </section>
@@ -32,7 +33,7 @@
 
         <div class="box pb-[30px] grid grid-cols-2 gap-4">
           <div class=" bg-white rounded-[5px] w-[500px] h-[295px] ml-[20px]" *ngFor="let post of Posts" >
-            <div class=" inline-block p-[20px] px-[26px] grid gap-[23px]">
+            <div class=" p-[20px] px-[26px] grid gap-[23px]">
               <span class="text-[26px] font-bold ">{{post.title}}</span>
               <div class="grid grid-cols-3 ">
                 <p class="text-[19px]">{{post.createAt}}</p>
@@ -66,43 +67,6 @@
               <p> {{project.shortDesc}}</p>
             </div>
           </div>
-
-          <!-- <div class=" border-b border-inherit ">
-            <div class="w-[246px] float-left mr-[14px]">
-              <img class="w-[246px] h-[180px] object-cover rounded-[20px]"
-                src="https://res.cloudinary.com/assignment22/image/upload/v1654916693/Ass-reactjs/3_uphrgz.jpg" alt="">
-            </div>
-            <div class="float-right w-[69%] pb-[20px]">
-              <p class="text-[29px] font-bold pb-[14px]">Designing Dashboards</p>
-              <div class="pb-[20px]">
-                <button class="rounded-[40px] border bg-[#142850] text-white font-bold w-[64px] text-[18px] ">2020
-                </button>
-                <p class="float-right mr-[411px] text-[19px] ">Dashboard</p>
-              </div>
-              <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div> -->
-
-          <!-- <div class=" border-b border-inherit ">
-            <div class="w-[246px] float-left mr-[14px]">
-              <img class="w-[246px] h-[180px] object-cover rounded-[20px]"
-                src="https://res.cloudinary.com/assignment22/image/upload/v1654916693/Ass-reactjs/1_nbbiiz.jpg" alt="">
-            </div>
-            <div class="float-right w-[69%] pb-[20px]">
-              <p class="text-[29px] font-bold pb-[14px]">Designing Dashboards</p>
-              <div class="pb-[20px]">
-                <button class="rounded-[40px] border bg-[#142850] text-white font-bold w-[64px] text-[18px] ">2020
-                </button>
-                <p class="float-right mr-[411px] text-[19px] ">Dashboard</p>
-              </div>
-              <p> Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div> -->
-
         </div>
       </div>
     </section>
